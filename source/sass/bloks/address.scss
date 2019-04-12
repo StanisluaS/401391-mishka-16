@@ -1,0 +1,63 @@
+.address__table {
+  width: 260px;
+
+  line-height: 30px;
+
+  border-collapse: collapse;
+}
+
+.address__row {
+  vertical-align: top;
+}
+
+.address__name {
+  padding: 0;
+  width: 77px;
+  box-sizing: border-box;
+}
+
+.address__name--first {
+  padding-bottom: 20px;
+}
+
+.address__value {
+  padding: 0;
+  width: 183px;
+  box-sizing: border-box;
+}
+
+.address__mail {
+  position: relative;
+
+  display: inline-block;
+
+  color: inherit;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
+}
+
+.address__mail::before {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+
+  height: 1px;
+  width: 100%;
+
+  background-color: #62d1ba;
+}
+
+.address__mail:active::before {
+  opacity: 0.1;
+}
+
+.address__value--post {
+  padding-right: 25px;
+}

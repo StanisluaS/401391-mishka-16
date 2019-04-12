@@ -1,0 +1,49 @@
+.order-color {
+  padding-bottom: 17px;
+}
+
+.order-color__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 198px;
+
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    background-color: #63d1bb;
+  }
+}
+
+.order-color__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.order-color__item {
+  margin-bottom: 14px;
+  padding-top: 11px;
+  padding-left: 62px;
+  min-height: 40px;
+  box-sizing: border-box;
+
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}

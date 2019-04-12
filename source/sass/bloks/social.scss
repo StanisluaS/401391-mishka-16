@@ -1,0 +1,48 @@
+.social {
+  position: relative;
+}
+
+.social::before {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+
+  width: calc(100% - 60px);
+  height: 1px;
+
+  background-color: #e5e5e5;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  min-height: 80px;
+
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 22px;
+  height: 21px;
+
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.social__link--fb {
+  width: 15px;
+  height: 28px;
+}
+
+.social__link--twitter {
+  width: 23px;
+  height: 20px;
+}

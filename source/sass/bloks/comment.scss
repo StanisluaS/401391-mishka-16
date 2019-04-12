@@ -1,0 +1,48 @@
+.comment {
+  padding: 0 30px;
+  padding-bottom: 51px;
+
+  background-image: url('/img/bg-zigzag-line.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 105%;
+}
+
+.comment__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: #000000;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.comment__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.comment__text {
+  margin: 0;
+  margin-bottom: 27px;
+
+  line-height: 30px;
+}
+
+.comment__author-name {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.comment__author-link {
+  display: block;
+  margin-bottom: 30px;
+
+  color: #000000;
+  font-size: 17px;
+  line-height: 30px;
+}

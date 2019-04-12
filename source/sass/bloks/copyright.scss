@@ -1,0 +1,22 @@
+.copyright {
+  min-height: 79px;
+}
+
+.copyright__link {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: #46c1ae;
+}

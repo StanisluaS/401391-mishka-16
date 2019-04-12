@@ -1,0 +1,13 @@
+.slider__button {
+  padding: 0;
+  width: 130px;
+  height: 52px;
+  box-sizing: border-box;
+
+  border: 1px solid #ececec;
+  background-color: transparent;
+}
+
+.slider__button--back {
+  border-right: none;
+}
