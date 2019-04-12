@@ -25,7 +25,7 @@
   text-transform: uppercase;
 
   &::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 50%;
@@ -73,13 +73,13 @@
 }
 
 .order-contacts__input--telefon {
-  background-image: url('/img/icon-phone.svg');
+  background-image: url("/img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: top 11px right 8px;
 
   &:hover,
   &:focus {
-    background-image: url('/img/icon-phone-green.svg');
+    background-image: url("/img/icon-phone-green.svg");
     background-position: top 11px right 9px;
   }
 
