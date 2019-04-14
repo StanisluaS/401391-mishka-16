@@ -2,7 +2,7 @@
   padding: 30px;
   padding-bottom: 42px;
 
-  background-image: url("/img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 105%;
@@ -22,7 +22,7 @@
   display: block;
   margin-bottom: 28px;
 
-  color: #63d1bb;
+  color: adjust-color($color-decor, $red: 1, $blue: 1);
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -46,7 +46,7 @@
   padding: 10px 0;
   width: auto;
 
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid adjust-color($white, $red: -19, $green: -19, $blue: -19);
 }
 
 .popular-product__characteristic-value {

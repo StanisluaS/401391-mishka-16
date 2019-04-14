@@ -22,7 +22,7 @@
   margin-bottom: 25px;
   padding-right: 198px;
 
-  color: #63d1bb;
+  color: adjust-color($color-decor, $red: 1, $blue: 1);
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
@@ -37,12 +37,12 @@
     width: 198px;
     height: 1px;
 
-    background-color: #63d1bb;
+    background-color: adjust-color($color-decor, $red: 1, $blue: 1);
   }
 }
 
 .order-user__label {
-  color: #000000;
+  color: $color-second-basic;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -58,21 +58,21 @@
 
   border: none;
 
-  box-shadow: inset 0 -2px 0 #000000;
+  box-shadow: inset 0 -2px 0 $color-second-basic;
 
   &:hover {
-    color: rgba(68, 68, 68, 0.3);
+    color: transparentize($color-basic, 0.7);
 
-    box-shadow: inset 0 -2px 0 #62d1ba;
+    box-shadow: inset 0 -2px 0 $color-decor;
   }
 
   &:focus {
-    color: #444444;
+    color: $color-basic;
 
-    box-shadow: inset 0 -2px 0 #62d1ba;
+    box-shadow: inset 0 -2px 0 $color-decor;
   }
 
   &::placeholder {
-    color: rgba(68, 68, 68, 0.3);
+    color: transparentize($color-basic, 0.7);
   }
 }

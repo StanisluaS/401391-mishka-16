@@ -6,7 +6,7 @@
   margin-bottom: 25px;
   padding-right: 198px;
 
-  color: #63d1bb;
+  color: adjust-color($color-decor, $red: 1, $blue: 1);
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
@@ -22,7 +22,7 @@
     width: 198px;
     height: 1px;
 
-    background-color: #63d1bb;
+    background-color: adjust-color($color-decor, $red: 1, $blue: 1);
   }
 }
 
@@ -36,21 +36,21 @@
   font-size: 17px;
   line-height: 18px;
 
-  border: 2px solid #444444;
+  border: 2px solid $color-basic;
 
   &::placeholder {
-    color: rgba(68, 68, 68, 0.3);
+    color: transparentize($color-basic, 0.7);
   }
 
   &:hover {
-    color: rgba(68, 68, 68, 0.3);
+    color: transparentize($color-basic, 0.7);
 
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-decor;
   }
 
   &:focus {
-    color: #444444;
+    color: $color-basic;
 
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-decor;
   }
 }

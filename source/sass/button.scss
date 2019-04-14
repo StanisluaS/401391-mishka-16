@@ -2,7 +2,7 @@
   display: block;
   padding: 14px 10px;
 
-  color: #444444;
+  color: $color-basic;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -10,17 +10,17 @@
   text-transform: uppercase;
 
   background-color: transparent;
-  border: 2px solid #444444;
+  border: 2px solid $color-basic;
 
   &:hover {
-    color: #ffffff;
+    color: $white;
 
-    background-color: #444444;
+    background-color: $color-basic;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: transparentize($white, 0.7);
 
-    background-color: #444444;
+    background-color: $color-basic;
   }
 }

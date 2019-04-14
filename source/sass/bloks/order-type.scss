@@ -9,7 +9,7 @@
   margin-bottom: 25px;
   padding-right: 198px;
 
-  color: #63d1bb;
+  color: adjust-color($color-decor, $red: 1, $blue: 1);
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
     width: 198px;
     height: 1px;
 
-    background-color: #63d1bb;
+    background-color: adjust-color($color-decor, $red: 1, $blue: 1);
   }
 }
 
@@ -42,7 +42,7 @@
   min-height: 40px;
   box-sizing: border-box;
 
-  color: #000000;
+  color: $color-second-basic;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;

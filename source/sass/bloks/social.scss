@@ -1,18 +1,18 @@
 .social {
   position: relative;
-}
 
-.social::before {
-  content: "";
+  &::before {
+    content: "";
 
-  position: absolute;
-  bottom: 0;
-  left: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
 
-  width: calc(100% - 60px);
-  height: 1px;
+    width: calc(100% - 60px);
+    height: 1px;
 
-  background-color: #e5e5e5;
+    background-color: adjust-color($white, $red: -26, $green: -26, $blue: -26);
+  }
 }
 
 .social__list {
@@ -29,11 +29,11 @@
   height: 21px;
 
   &:hover path {
-    fill: #46c1ae;
+    fill: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12);
   }
 
   &:active path {
-    opacity: 0.3;
+    fill: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12, $alpha: -0.7);
   }
 }
 

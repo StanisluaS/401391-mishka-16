@@ -12,13 +12,13 @@
   display: block;
   padding: 28px 30px;
 
-  color: #000000;
+  color: $color-second-basic;
   text-align: center;
 
-  box-shadow: 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 adjust-color($white, $red: -19, $green: -19, $blue: -19);
 
   &:not(.main-nav__link--active):hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: transparentize($color-second-basic, 0.4);
   }
 
   &:not(.main-nav__link--active):active {
@@ -26,11 +26,11 @@
   }
 
   & path {
-    fill: rgba(35, 31, 32, 0.2);
+    fill: transparentize($color-fill-icon, 0.8);
   }
 
   &:hover path {
-    fill: rgba(99, 209, 187, 1);
+    fill: adjust-color($color-decor, $red: 1, $blue: 1);
   }
 }
 

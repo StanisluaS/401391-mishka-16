@@ -3,20 +3,24 @@
 }
 
 .copyright__link {
-  color: #000000;
+  color: $color-second-basic;
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
 
+  &:hover .copyright__icon {
+    fill: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12);
+  }
+
   &:active {
-    opacity: 0.3;
+    color: transparentize($color-second-basic, 0.7);
+
+    & .copyright__icon {
+      fill: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12, $alpha: -0.7);
+    }
   }
 }
 
 .copyright__icon {
-  fill: #63d1bb;
-}
-
-.copyright__link:hover .copyright__icon {
-  fill: #46c1ae;
+  fill: adjust-color($color-decor, $red: 1, $blue: 1);
 }

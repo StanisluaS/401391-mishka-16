@@ -4,7 +4,7 @@
   height: 52px;
   box-sizing: border-box;
 
-  border: 1px solid #ececec;
+  border: 1px solid adjust-color($white, $red: -19, $green: -19, $blue: -19);
   background-color: transparent;
 }
 
