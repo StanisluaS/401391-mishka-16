@@ -1,0 +1,63 @@
+.address__table {
+  width: 260px;
+
+  line-height: 30px;
+
+  border-collapse: collapse;
+}
+
+.address__row {
+  vertical-align: top;
+}
+
+.address__name {
+  padding: 0;
+  width: 77px;
+  box-sizing: border-box;
+}
+
+.address__name--first {
+  padding-bottom: 20px;
+}
+
+.address__value {
+  padding: 0;
+  width: 183px;
+  box-sizing: border-box;
+}
+
+.address__mail {
+  position: relative;
+
+  display: inline-block;
+
+  color: inherit;
+
+  &:hover {
+    color: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12);
+  }
+
+  &:active {
+    color: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12, $alpha: -0.7);
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+
+    height: 1px;
+    width: 100%;
+
+    background-color: $color-decor;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+}
+
+.address__value--post {
+  padding-right: 25px;
+}

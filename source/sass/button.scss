@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  padding: 14px 10px;
+
+  color: $color-basic;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $color-basic;
+
+  &:hover {
+    color: $white;
+
+    background-color: $color-basic;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+
+    background-color: $color-basic;
+  }
+}

@@ -1,0 +1,26 @@
+.copyright {
+  min-height: 79px;
+}
+
+.copyright__link {
+  color: $color-second-basic;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+
+  &:hover .copyright__icon {
+    fill: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12);
+  }
+
+  &:active {
+    color: transparentize($color-second-basic, 0.7);
+
+    & .copyright__icon {
+      fill: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12, $alpha: -0.7);
+    }
+  }
+}
+
+.copyright__icon {
+  fill: adjust-color($color-decor, $red: 1, $blue: 1);
+}

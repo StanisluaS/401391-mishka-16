@@ -1,0 +1,56 @@
+.order-wishes__title {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 198px;
+
+  color: adjust-color($color-decor, $red: 1, $blue: 1);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    background-color: adjust-color($color-decor, $red: 1, $blue: 1);
+  }
+}
+
+.order-wishes__message {
+  margin-bottom: 17px;
+  padding: 18px 17px;
+  width: 100%;
+  height: 142px;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 18px;
+
+  border: 2px solid $color-basic;
+
+  &::placeholder {
+    color: transparentize($color-basic, 0.7);
+  }
+
+  &:hover {
+    color: transparentize($color-basic, 0.7);
+
+    border: 2px solid $color-decor;
+  }
+
+  &:focus {
+    color: $color-basic;
+
+    border: 2px solid $color-decor;
+  }
+}

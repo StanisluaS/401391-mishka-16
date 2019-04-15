@@ -1,0 +1,76 @@
+.popular-product {
+  padding: 30px;
+  padding-bottom: 42px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 105%;
+}
+
+.popular-product__title {
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.popular-product__text {
+  display: block;
+  margin-bottom: 28px;
+
+  color: adjust-color($color-decor, $red: 1, $blue: 1);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.popular-product__description {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.popular-product__characteristic {
+  margin-bottom: 28px;
+  width: 260px;
+
+  border-collapse: collapse;
+}
+
+.popular-product__characteristic-name,
+.popular-product__characteristic-value {
+  padding: 10px 0;
+  width: auto;
+
+  border-bottom: 1px solid adjust-color($white, $red: -19, $green: -19, $blue: -19);
+}
+
+.popular-product__characteristic-value {
+  padding-left: 30px;
+}
+
+.popular-product__img-wrapper {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.popular-product__img {
+  display: block;
+}
+
+.popular-product__price-wrapper {
+  margin: 0;
+}
+
+.popular-product__price {
+  display: block;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+}

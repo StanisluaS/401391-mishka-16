@@ -1,0 +1,53 @@
+.product-categories__list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  list-style: none;
+}
+
+.product-categories__link {
+  display: block;
+  padding: 28px 30px;
+  padding-right: 180px;
+
+  color: $white;
+  font-size: 19px;
+  font-weight: 700;
+  background-color: adjust-color($color-decor, $red: 1, $blue: 1);
+
+  &:hover {
+    padding-top: 23px;
+    padding-bottom: 33px;
+
+    background-color: adjust-color($color-decor, $red: -9, $green: 4, $blue: 2);
+    box-shadow: 0 -5px 0 0 adjust-color($color-decor, $red: -9, $green: 4, $blue: 2);
+  }
+
+  &:active {
+    padding: 28px 30px;
+    padding-right: 180px;
+
+    color: transparentize($white, 0.7);
+    box-shadow: none;
+  }
+}
+
+.product-categories__link--toy {
+  background-color: #56c3b2;
+
+  &:hover {
+    background-color: adjust-color($color-decor, $red: -28, $green: -16, $blue: -12);
+    box-shadow: 0 -5px 0 0 adjust-color($color-decor, $red: -28, $green: -16, $blue: -12);
+  }
+
+  &:active {
+    padding: 28px 30px;
+    padding-right: 180px;
+
+    color: transparentize($white, 0.7);
+    box-shadow: none;
+  }
+}

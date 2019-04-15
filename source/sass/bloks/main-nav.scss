@@ -1,0 +1,45 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  list-style: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 28px 30px;
+
+  color: $color-second-basic;
+  text-align: center;
+
+  box-shadow: 0 1px 0 adjust-color($white, $red: -19, $green: -19, $blue: -19);
+
+  &:not(.main-nav__link--active):hover {
+    color: transparentize($color-second-basic, 0.4);
+  }
+
+  &:not(.main-nav__link--active):active {
+    opacity: 0.3;
+  }
+
+  & path {
+    fill: transparentize($color-fill-icon, 0.8);
+  }
+
+  &:hover path {
+    fill: adjust-color($color-decor, $red: 1, $blue: 1);
+  }
+}
+
+.main-nav__link--search .main-nav__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.main-nav__link--basket .main-nav__icon {
+  width: 21px;
+  height: 18px;
+}
